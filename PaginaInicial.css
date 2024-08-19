@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(360deg, #4A2C00, #D1B072);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Times New Roman", Sans-serif;
+}
+
+header img {
+    max-width: 100px;
+    width: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    gap: 20px; 
+    padding: 8px;
+    border-right: 2px;    
+    margin-left: auto; 
+    background: linear-gradient(180deg, #4A2C00, #D1B072); 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border-right: 1.3px solid #4A2C00;
+    border-bottom: 1.2px solid #4A2C00;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #5C3600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  
+    
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+
+.slider > div {
+    min-width: 300px; 
+    margin: 0 15px; 
+    background: linear-gradient(180deg, #4A2C00, #D1B072); 
+    color: white; 
+    border-radius: 10px;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.slider img {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: solid #4A2C00;
+    padding: 3px;
+}
+
+.arrow {
+    background: transparent; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: #333; 
+}
+
+.left-arrow {
+    left: -10px; 
+}
+
+.right-arrow {
+    right: -10px; 
+}
+footer {
+    background: linear-gradient(360deg, #4A2C00, #D1B072);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer img {
+    max-width: 100px;
+    width: 40px;
+}
+@media (min-width: 1200px) {
+    header {
+        padding: 30px 40px;
+    }
+
+    header img {
+        max-width: 150px;
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 40px; 
+        padding: 16px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .slider-container {
+        width: 60%; 
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .slider > div {
+        min-width: 400px; 
+        margin: 0 25px;
+        padding: 30px; 
+    }
+
+    .slider img {
+        width: 150px; 
+        margin-bottom: 30px;
+    }
+
+    .arrow {
+        font-size: 30px; 
+        padding: 15px; 
+    }
+
+    .left-arrow {
+        left: -20px; 
+    }
+
+    .right-arrow {
+        right: -20px; 
+    }
+
+    footer {
+        padding: 30px 40px;
+    }
+
+    footer img {
+        max-width: 150px;
+        width: 60px;
+    }
+}
