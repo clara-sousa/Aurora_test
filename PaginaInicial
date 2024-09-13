@@ -4,51 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="PaginaInicial.css">
-    <script src="Nav.js" defer></script>
+    <script src="inicial.js" defer></script>
     <title>Biblioteca Aurora</title>
 </head>
 <body>
     <header>
-        <img src="/IMG/logo.png" alt="logo da biblioteca Aurora">
+        <img src="IMG/logo.png"
+ alt="logo da biblioteca Aurora">
         <h1>Biblioteca Aurora</h1>
     </header>
-    <nav>
+      <nav>
+    <div id="menu">
         <a href="PaginaInicial.html">Início</a>
-        <a href="PaginaSobre.html">Quem é Aurora</a>
-        <a href="PaginaCatalogo.html">Catálogo</a>
-        <a href="PáginaUsuario.html">Login</a>
-        <a href="PaginaQA">Q&A</a>
-    </nav>
+        <div class="menu-item">
+            <a href="#">Sobre Aurora</a>
+            <div class="submenu">
+                <a href="criacao.html">Criação da Aurora</a>
+                <a href="equipe.html">Nossa Equipe</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Catálogo</a>
+            <div class="submenu">
+                <a href="non-fic.html">Livros de não ficção</a>
+                <a href="fic.html">Livros de ficção</a>
+                <a href="uni.html">Livros Universitários</a>
+                <a href="livros.html">Todos os livros</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="PaginaUsuario.html">Sua conta</a>
+            <div class="submenu">
+                <a href="login.html">Faça login em sua conta</a>
+                <a href="cadastro.html">Crie uma conta</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Ajuda</a>
+            <div class="submenu">
+                <a href="ask.html">Perguntas Frequentes</a>
+                <a href="duvidas.html">Dúvidas do usuário</a>
+            </div>
+        </div>
+    </div>
+</nav>
     <section class="slider-container">
         <div class="slider">
             <div id="info">
-                <img src="/IMG/auroralivro.jpg" alt="vários livros lado a lado">
+                <img src="IMG/auroralivro.jpg" alt="vários livros lado a lado">
                 <h2>Visite nosso catálogo de livros</h2>
                 <p>O site da Biblioteca Aurora possui o maior catálogo online de livros que um leitor assíduo poderia desejar, de ficção a livros universitários, no site da Aurora você acha tudo que procura.</p>
             </div>       
             <div id="info2">
-                <img src="/IMG/aurora².jpg" alt="foto de uma biblioteca">
+                <img src="IMG/aurora².jpg" alt="foto de uma biblioteca">
                 <h2>Visite nossa biblioteca</h2>
                 <p>A Biblioteca Aurora é um espaço onde os amantes de livros podem vivenciar seu hobbie favorito com a garantia de conforto total, num espaço calmo construído pensando nas necessidades dos leitores.</p>
             </div>
             <div id="info3">
-                <img src="/IMG/salaaurora.jpg" alt="foto de um espaço numa biblioteca">
+                <img src="IMG/salaaurora.jpg" alt="foto de um espaço numa biblioteca">
                 <h2>Cadastre-se para saber as novidades</h2>
                 <p>Faça seu cadastro no site da Biblioteca Aurora para ficar por dentro de novos livros adicionados em nosso catálogo, assim como saber de antemão as mais novas notícias do mundo literário através de nosso blog.</p>
+            </div>
+            <div id="info4">
+                <h2>Fique por dentro das novidades do mundo literário através do nosso blog!</h2>
+                <p>Se inscreva no blog da Aurora para ficar por dentro das últimas notícias literárias, ter acesso a resenhas exclusivas de nossa equipe e muito mais!</p>
+                <h3>Acesse nossa <a href="info.html">página de informações</a>  para saber mais sobre os serviços exclusivos para membros da Aurora</h3>
             </div>
         </div>
         <button class="arrow left-arrow">&#9664;</button>
         <button class="arrow right-arrow">&#9654;</button>
     </section>
+<div id="anuncio" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+       <h2>Torne-se membro de nosso blog!</h2>
+        <p>Não perca a oportunidade de compartilhar com colegas leitores suas resenhas sobre livros populares e ajudá-los a ficar por dentro das novidades do mundo literário, candidate-se para ser um membro em nosso blog literário!</p>
+        <p>Digite seu e-mail </p>
+        <form action="#" method="post">
+            <input type="email" placeholder="xxxxx@gmail.com" required>
+            <p>Qual função você deseja ter?</p>
+               <select name="opções" id="opções">
+    <option value="option1">Escritor(a) de resenha</option>
+    <option value="option2">Escritor(a) de notícias literárias</option>
+    <option value="option3">Revisor(a)</option>
+         <option value="option4">Moderador(a) de comentários</option>
+          </select>
+            <button type="submit">Envie sua inscrição</button>
+            <h6>*Após o envio da inscrição, dentro de uma semana (7 dias), nossa equipe irá entrar em contato via e-mail</h6>
+        </form>
+    </div>
+</div>
     <footer>
-        
-        <img src="/IMG/logo.png" alt="logo da biblioteca Aurora"> 
-        <div class="image">
-         <img src="/IMG/local.png" alt="endereço">
-         <img src="/IMG/X.png" alt="conta no X da Aurora">
-         <img src="/IMG/IG.png" alt="conta no Instagram da Aurora">
-         <img src="/IMG/whats.png" alt="Número de telefone da recepção">
-         </div>
-    </footer>
+    <img src="IMG/logo.png" alt="logo da biblioteca Aurora"> 
+    <div class="image">
+        <div class="footer-item">
+            <img src="IMG/local.png" alt="endereço">
+            <p>Rua XXX, N° 428, bairro XXXXX, SP</p>
+        </div>
+        <div class="footer-item">
+            <img src="IMG/X.png" alt="conta no X da Aurora">
+            <p>@Aurora_Livros_ofc</p>
+        </div>
+        <div class="footer-item">
+            <img src="IMG/IG.png" alt="conta no Instagram da Aurora">
+            <p>@Aurora_Biblioteca_ofc</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
