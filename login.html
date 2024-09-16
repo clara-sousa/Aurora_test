@@ -1,23 +1,51 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <title>Página de Login </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&family=Signika:wght,GRAD@600,-30..0&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <script src="login.js" defer></script>
 </head>
     <body> 
-        <div class="container">
+        <header>
+            <img src="IMG/logo.png"
+     alt="logo da biblioteca Aurora">
+            <h1>Biblioteca Aurora</h1>
+        </header>
+        <div class="background">
+        <section>
+        <div class="login-container">
             <h2>Faça seu login</h2>
             <form id="loginForm">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" required>
-                <label for="password">Senha:</label>
-                <input type="password" required>
-                <button type="submit">Entrar</button>
-            </form>
-            <p>Não tem cadastro? Cadastre-se agora de forma simples e fácil clicando <a href="cadastro.html">AQUI</a></p>
-            </div>
-        
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" required>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" required>
+    <button type="submit" id="sent">Entrar</button>
+    <p>Não tem cadastro? Cadastre-se agora de forma simples e fácil clicando <a href="cadastro.html">AQUI</a></p>
+</form>
+        </section>
+        <footer>
+    <img src="IMG/logo.png" alt="logo da biblioteca Aurora"> 
+    <div class="image">
+        <div class="footer-item">
+            <img src="IMG/local.png" alt="endereço">
+            <p>Rua XXX, N° 428, bairro XXXXX, SP</p>
+        </div>
+        <div class="footer-item">
+            <img src="IMG/X.png" alt="conta no X da Aurora">
+            <p>@Aurora_Livros_ofc</p>
+        </div>
+        <div class="footer-item">
+            <img src="IMG/IG.png" alt="conta no Instagram da Aurora">
+            <p>@Aurora_Biblioteca_ofc</p>
+        </div>
+    </div>
+</footer>
     </body>
 </html>
