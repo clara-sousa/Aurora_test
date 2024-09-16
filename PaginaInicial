@@ -74,9 +74,11 @@
         <div class="mySlides">
             <h2>Fique por dentro das novidades do mundo literário através do nosso blog!</h2>
             <p>Se inscreva no blog da Aurora para ficar por dentro das últimas notícias literárias, ter acesso a resenhas exclusivas de nossa equipe e muito mais!</p>
-            <h6>Acesse nossa <a href="info.html">página de informações</a> para saber mais sobre os serviços exclusivos para membros da Aurora</h6>
+            <h4>Acesse nossa <a href="info.html">página de informações</a> para saber mais sobre os serviços exclusivos para membros da Aurora</h4>
         </div>
     </div>
+    <button class="arrow left-arrow">&#9664;</button>
+        <button class="arrow right-arrow">&#9654;</button>s
 </section>
 <div id="anuncio" class="modal">
     <div class="modal-content">
