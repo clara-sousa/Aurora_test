@@ -1,18 +1,7 @@
-body {
+body { 
     margin: 0;
-    font-family: Arial, sans-serif;
 }
-.slider-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    width: 80%; 
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-    header {
+header {
         background: linear-gradient(360deg, #4A2C00, #D1B072);
         color: white;
         padding: 20px;
@@ -21,8 +10,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-family: "Times New Roman", Sans-serif;
-    }
+        font-family: "Bebas Neue";
+        font-size: 32px;    }
     
     header img {
         max-width: 100px;
@@ -44,6 +33,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
+    font-family: "Signika"; 
 }
 
 #menu a {
@@ -80,158 +70,97 @@ body {
 #menu a:hover, .submenu a:hover {
         background: linear-gradient(180deg, #8B4513, #E6C299); 
 }
-.slider a {
-    text-decoration: none;
-    color: #8B4513;
-    font-weight: bold;
+.cadastro {
+    background: linear-gradient(180deg, #8B4513, #E6C299); 
+   padding: 30px;
+   border-radius: 8px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 30px;
+   margin-right: 30px;
+   
 }
-.slider h2 {
-    font-weight: bold; 
-    color: #D4A85D;
-}
-.slider h3 {
-    font-weight: bold; 
-    text-align: justify;
-}
-.slider p {
-  font-family: "Lucida Sans", sans-serif;
-   margin: 4px 4px;
-  text-align: justify; 
-  font-size: 20e.m; }
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease; 
-}
-
-.slider > div {
-    min-width: 300px; 
-    margin: 0 15px; 
-    background: linear-gradient(180deg, #4A2C00, #D1B072); 
-    color: white; 
-    border-radius: 10px;
-    padding: 20px; 
-    box-sizing: border-box;
-}
-
-.slider img {
-    width: 100px; 
-    height: auto; 
-    margin-bottom: 20px;
-    border-radius: 20px;
-    border: solid #4A2C00;
-    padding: 3px;
-}
-
-.arrow {
-    background: transparent; 
-    border: none; 
-    padding: 10px; 
-    cursor: pointer; 
-    font-size: 20px; 
-    position: absolute; 
-    top: 50%;
-    transform: translateY(-50%); 
-    color: #333; 
-}
-
-.left-arrow {
-    left: -10px; 
-}
-
-.right-arrow {
-    right: -10px; 
-}
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
-}
-
-.modal-content {
-    background: linear-gradient(180deg, #3B1F00, #A87C4F);
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-    max-width: 500px;  
-    position: relative;
-}
-.modal-content h2 {
-    color: #D4A85D;
-    font-weigh: bold;
-}
-.modal-content p {
-    color: white;
-    text-align: justify;
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
+.cadastro a {
+    text-decoration:none;
+    transition: 0.3s ease;
+    pointer: click;
     color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
-.modal-content form {
-    display: flex;
-    flex-direction: column;
+.cadastro a:hover { 
+    text-decoration: underline;
 }
-
-.modal-content input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.modal-content button {
-  margin: 30px;
-    padding: 10px;
-    background: linear-gradient(140deg, #000000, #4A4A4A);
+.cadastro h2 {
+    font-size: 24px;
+    font-family: "Bebas Neue";
     color: white;
+}
+.cadastro p {
+    color: white;
+    font-family: "Signika";
+}
+.cadastro input {
+    border-radius: 15px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 250px;
+    padding: 14px;
+    transition: 0.3s ease; 
 }
-
-.modal-content button:hover {
-    background-color: ##4A4A4A;
+.cadastro h5 {
+    display: inline-block;
+    color: white;
+    font-size: 13px;
 }
-
-.modal-content h6 {
-    font-size: 12px;
-    color: #555;
-    margin-top: 10px;
+.cadastro input:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
 }
- select {
-            position: relative;
-            display: inline-block;          
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #fff;
-            cursor: pointer;           
-        }
-
-
+.news button {
+    border-radius: 30px;
+    border: none; 
+    transition: 0.3s ease;
+    pointer: click;
+    padding: 8px;
+    background: linear-gradient(180deg, #8B4513, #E6C299); 
+    color: white;
+    font-family: "Signika";
+    font-weight: bold;
+}
+.news button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.rejectBtn {
+    margin-left: 150px;
+    margin-bottom: 10px;
+    width: 60px;
+    
+}
+.acceptBtn {
+    margin-bottom: 10px;
+    width: 60px;
+}
+.cad button{
+    border-radius: 20px;
+    width: 99%;
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(180deg, #8B4513, #E6C299); 
+    border: none; 
+    transition: all 0.3s ease;
+    pointer: click;
+    color: white;
+    font-family: "Signika";
+    font-weight: bold;
+}
+}
+.cad button:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-decoration: none;
+}
 footer {
     display: flex;
     align-items: center;
     background: linear-gradient(180deg, #4A2C00, #D1B072); 
     padding: 20px;
+    font-family: "Bebas Neue";
 }
 footer-logo {
   max-width: 100px;
@@ -262,67 +191,4 @@ footer img {
     margin: 0;
     font-size: 14px;
     color: white;
-}
-
-@media (min-width: 1200px) {
-    header {
-        padding: 30px 40px;
-    }
-
-    header img {
-        max-width: 150px;
-        width: 60px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav {
-        gap: 40px; 
-        padding: 16px;
-    }
-
-    nav a {
-        font-size: 18px;
-    }
-
-    .slider-container {
-        width: 60%; 
-        margin-top: 80px;
-        margin-bottom: 50px;
-    }
-
-    .slider > div {
-        min-width: 400px; 
-        margin: 0 25px;
-        padding: 30px; 
-    }
-
-    .slider img {
-        width: 150px; 
-        margin-bottom: 30px;
-    }
-
-    .arrow {
-        font-size: 30px; 
-        padding: 15px; 
-    }
-
-    .left-arrow {
-        left: -20px; 
-    }
-
-    .right-arrow {
-        right: -20px; 
-    }
-
-    footer {
-        padding: 30px 40px;
-    }
-
-    footer img {
-        max-width: 150px;
-        width: 60px;
-    }
 }
