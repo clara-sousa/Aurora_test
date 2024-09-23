@@ -1,125 +1,152 @@
+@font-face {
+   font-family: "Kanit";
+   src: url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;800&display=swap");
+}
+@font-face {
+   font-family: "Bebas Neue", "Nerko One", "Signika";
+   src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&family=Signika:wght,GRAD@600,-30..0&display=swap");
+}
 body {
     margin: 0;
-    font-family: Arial, sans-serif; 
+  height: 100vh;
 }
-.background {
-    background: linear-gradient(360deg, #4A2C00, #D1B072);
-    height: 100vh;
-    margin: 0;
-   
-}
-header {
-    background: linear-gradient(180deg, #4A2C00, #D1B072);
-    color: white;
-    padding: 20px;
-    text-align: center;
+.slider-container {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-family: "Times New Roman", Sans-serif;
+    overflow: hidden;
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
-
-header img {
-    max-width: 100px;
-    width: 40px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.login-container {
-    background: linear-gradient(360deg, #774905, #e2be7c);
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin-top: 80px;
-    padding: 150px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-    margin-left: 30%;
-    margin-bottom: 280px;
+    header {
+        background: linear-gradient(360deg, #4A2C00, #D1B072);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Bebas Neue";
+        font-size: 32px;    }
     
+    header img {
+        max-width: 100px;
+        width: 40px;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    nav {
+    width: 100%;
+    background: linear-gradient(180deg, #4A2C00, #D1B072); 
 }
-.login-container p {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 16px;
-}
-#loginForm {
-    display:flex;
-    flex-direction: column;
+
+#menu {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px 0;
+    font-family: "Signika"; 
 }
- h2 {
-    position:absolute;
-    top: 0;
-    left: 400px;
-    transform: translateX(-50%);
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(180deg, #8B4513, #E6C299); 
+    top: 60px;
+    padding: 0;
+    min-width: 160px;
+    z-index: 2;
+}
+
+.submenu a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+#menu a:hover, .submenu a:hover {
+        background: linear-gradient(180deg, #8B4513, #E6C299); 
+}
+.menu-item:hover .submenu {
+    display: block;
+}
+#menu a:hover, .submenu a:hover {
+        background: linear-gradient(180deg, #8B4513, #E6C299); 
+}
+
+.login {
+   background: linear-gradient(360deg, #774905, #e2be7c);
+   margin-top: 8%;
+   margin-bottom: 8%;
+   margin-left: 35%;
+   margin-right: 4%;
+   border-radius: 40px;
+   width: fit-content;
+   padding: 4%;
+}
+.titles {
     padding: 10px 0;
     margin-right: 50px;
-    margin-bottom: 50px;
-   
-}
-label {
-    margin-top: 100px;
-    display: flex;
-    margin: 10px 0 5px; 
-    text-align: left;
-    justify-content: space-between;
-    font-weight: bold;
-
-}
-input {
-    width: 200px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: content-box;
-    box-shadow: 0px 4px 10px rgba(134, 127, 17, 0.3);
-    transform: translateY(-2px);
-}
-button {
-    width: 100px;
-    padding: 8px;
-    background: linear-gradient(360deg, #774905, #e2be7c);
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-}
-button:hover {
-    background-color: rgb(255, 195, 67);
-}
- section {
-    
-    color: white;
-    padding: 20px;
+    margin-bottom: 4px;
+    margin-top: 4px;
     text-align: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Times New Roman", Sans-serif;
+    color: white;
+    font-family: 'Kanit';
 }
-p a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
+.label {
+    text-align:center;
+    margin-right: 50px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+.label input {
+    border-radius: 100px;
+    border: none;
+    padding: 6px;
+}
+.login button {
+    padding: 10px;
+    width: 200px;
+    background: linear-gradient(140deg, #000000, #4A4A4A);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-bottom: 4px;
+    margin-top: 34px;
+    margin-left: 19px;
+    font-family: 'Kanit';
 }
 footer {
-    display: flex;
     align-items: center;
     background: linear-gradient(180deg, #4A2C00, #D1B072); 
     padding: 20px;
     font-family: "Bebas Neue";
+    margin-top: 12px;
+    margin-bottom: -800px;
 }
 footer-logo {
   max-width: 100px;
@@ -151,10 +178,10 @@ footer img {
     font-size: 14px;
     color: white;
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1240px) {
     header {
         padding: 30px 40px;
-        text-align: left;
     }
 
     header img {
@@ -164,89 +191,22 @@ footer img {
 
     header h1 {
         font-size: 28px;
-        margin-left: 20px;
     }
 
-    .login-container {
-        margin: 80px auto;
-        padding: 30px 50px;
-        border-radius: 25px;
-        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-        transform: none;
-        width: 60%;
+    nav {
+        gap: 40px; 
+        padding: 16px;
     }
 
-    .login-container p {
-        margin-top: 10px;
+    nav a {
         font-size: 18px;
     }
-
-    #loginForm {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    h2 {
-        position: static;
-        transform: none;
-        padding: 20px 0;
-        font-size: 24px;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    label {
-        margin-top: 20px;
-        display: block;
-        text-align: left;
-        font-size: 18px;
-    }
-
-    input {
-        width: 100%;
-        max-width: 300px;
-        padding: 12px;
-        margin-bottom: 15px;
-        font-size: 16px;
-    }
-
-    button {
-        width: auto;
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
-    section {
-        padding: 40px;
-        font-size: 18px;
-    }
-
-    p a {
-        font-weight: normal;
-    }
-
     footer {
-        margin: 200px;
         padding: 30px 40px;
     }
 
     footer img {
         max-width: 150px;
-        height: 100px;
-    }
-
-    .footer-item {
-        margin-bottom: 20px;
-    }
-
-    .footer-item img {
-        width: 30px;
-        height: 30px;
-        margin: 0 15px;
-    }
-
-    .footer-item p {
-        font-size: 16px;
+        width: 70px;
     }
 }
