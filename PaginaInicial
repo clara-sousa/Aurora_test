@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> 
     <script src="inicial.js" defer></script>
+    <script src="month.js" defer></script>
     <title>Biblioteca Aurora</title>
 </head>
 <body>
@@ -80,6 +81,18 @@
     <button class="arrow left-arrow">&#9664;</button>
         <button class="arrow right-arrow">&#9654;</button>s
 </section>
+       <div id="month" class="carousel-container">
+    <div class="carousel">
+        <img src="IMG/agosto.jpg" alt="livros populares de agosto">
+        <img src="IMG/julho.jpg" alt="livros populares de julho">
+        <img src="IMG/junho.jpg" alt="livros populares de junho">
+        <img src="IMG/maio.jpg" alt="livros populares de maio">
+        <img src="IMG/abril.jpg" alt="livros populares de abril">
+        <img src="IMG/março.jpg" alt="livros populares de março">
+        <img src="IMG/fevereiro.jpg" alt="livros populares de fevereiro">
+        <img src="IMG/janeiro.jpg" alt="livros populares de janeiro">
+    </div>
+    </div>
 <div id="anuncio" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
