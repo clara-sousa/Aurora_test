@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('usergender', userGender);
         localStorage.setItem('userstate', userState);
         localStorage.setItem('usercity', userCity);
-        localStorage.setItem('usercep', userCEP);
         localStorage.setItem('usernumber', userNumber);
         localStorage.setItem('useremail', userEmail);
 
@@ -80,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
             alert("Você aceitou receber notificações.");
         } else {
             alert("Você optou por não receber notificações.");
-        }
-
-        window.location.href = "PaginaInicial.html";
+        } 
     });
-});
+});  
+
+
