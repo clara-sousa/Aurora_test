@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slider > div');
