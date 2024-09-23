@@ -71,14 +71,14 @@ header {
         background: linear-gradient(180deg, #8B4513, #E6C299); 
 }
 .cadastro {
-    background: linear-gradient(180deg, #8B4513, #E6C299); 
-   padding: 30px;
+   background-image: url("IMG/background.jpg");
+   padding: 20px;
    border-radius: 8px;
    margin-top: 50px;
    margin-bottom: 50px;
-   margin-left: 30px;
-   margin-right: 30px;
-
+   margin-left: 30%;
+   margin-right: 30%;
+   display: inline-table;
 }
 .cadastro a {
     text-decoration:none;
@@ -93,6 +93,7 @@ header {
     font-size: 24px;
     font-family: "Bebas Neue";
     color: white;
+    display: flex;
 }
 .cadastro p {
     color: white;
@@ -104,6 +105,7 @@ header {
     width: 250px;
     padding: 14px;
     transition: 0.3s ease; 
+    
 }
 .cadastro h5 {
     display: inline-block;
@@ -160,9 +162,6 @@ footer {
     background: linear-gradient(180deg, #4A2C00, #D1B072); 
     padding: 20px;
     font-family: "Bebas Neue";
-}
-footer-logo {
-  max-width: 100px;
 }
 footer img {
     margin-right: 15px;
