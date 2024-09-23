@@ -12,12 +12,12 @@ header {
         justify-content: space-between;
         font-family: "Bebas Neue";
         font-size: 32px;    }
-    
+
     header img {
         max-width: 100px;
         width: 40px;
     }
-    
+
     header h1 {
         margin: 0;
         font-size: 20px;
@@ -78,12 +78,12 @@ header {
    margin-bottom: 50px;
    margin-left: 30px;
    margin-right: 30px;
-   
+
 }
 .cadastro a {
     text-decoration:none;
     transition: 0.3s ease;
-    pointer: click;
+    pointer-events:click;
     color: black;
 }
 .cadastro a:hover { 
@@ -117,7 +117,7 @@ header {
     border-radius: 30px;
     border: none; 
     transition: 0.3s ease;
-    pointer: click;
+    pointer-events: click;
     padding: 8px;
     background: linear-gradient(180deg, #8B4513, #E6C299); 
     color: white;
@@ -131,7 +131,7 @@ header {
     margin-left: 150px;
     margin-bottom: 10px;
     width: 60px;
-    
+
 }
 .acceptBtn {
     margin-bottom: 10px;
@@ -145,11 +145,10 @@ header {
     background: linear-gradient(180deg, #8B4513, #E6C299); 
     border: none; 
     transition: all 0.3s ease;
-    pointer: click;
+    pointer-events: click;
     color: white;
     font-family: "Signika";
     font-weight: bold;
-}
 }
 .cad button:hover{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
