@@ -1,8 +1,24 @@
-        <img src="IMG/logo.png"
+   //foto padrão header e footer //
+<img src="IMG/logo.png"
  alt="logo da biblioteca Aurora">
+<img src="IMG/local.png" alt="endereço">
+<img src="IMG/X.png" alt="conta no X da Aurora">
+<img src="IMG/IG.png" alt="conta no Instagram da Aurora">
 
-            <img src="IMG/auroralivro.jpg" alt="vários livros lado a lado">
-
-            <img src="IMG/aurora².jpg" alt="foto de uma biblioteca">
-
-            <img src="IMG/salaaurora.jpg" alt="foto de um espaço numa biblioteca">
+        // container página inicial //
+<img src="IMG/auroralivro.jpg" alt="vários livros lado a lado">
+<img src="IMG/aurora².jpg" alt="foto de uma biblioteca">
+<img src="IMG/salaaurora.jpg" alt="foto de um espaço numa biblioteca">
+  
+        // slides de livros populares na página inicial //
+        <img src="IMG/agosto.jpg" alt="livros populares de agosto">
+        <img src="IMG/julho.jpg" alt="livros populares de julho">
+        <img src="IMG/junho.jpg" alt="livros populares de junho">
+        <img src="IMG/maio.jpg" alt="livros populares de maio">
+        <img src="IMG/abril.jpg" alt="livros populares de abril">
+        <img src="IMG/março.jpg" alt="livros populares de março">
+        <img src="IMG/fevereiro.jpg" alt="livros populares de fevereiro">
+        <img src="IMG/janeiro.jpg" alt="livros populares de janeiro">
+        
+      // background da página de cadastro //
+        background-image: url("IMG/background.jpg");
