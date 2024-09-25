@@ -5,7 +5,6 @@ document.getElementById('login').addEventListener('click', function(event) {
     localStorage.setItem('name', username);
     localStorage.setItem('password', password);
     if (username !== "" && password !== "") {
-        // Simulação de credenciais válidas
         if (username === "usuarioValido" && password === "senhaValida") {
             alert("Login realizado com sucesso!");
         } else {
