@@ -117,26 +117,46 @@ function displayBooks() {
     const bookList = document.getElementById("book-list");
     bookList.innerHTML = ''; // Limpa o conteúdo existente
 
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const paginatedBooks = filteredBooks.slice(startIndex, endIndex); // Obtém os livros a serem exibidos
+   // Calcula o índice inicial com base na página atual e no número de itens por página
 
-    paginatedBooks.forEach(book => {
-        const bookDiv = document.createElement("div");
-        bookDiv.classList.add("book");
-        bookDiv.innerHTML = `
-            <img src="${book.image}" alt="${book.title}">
-            <h3>${book.title}</h3>
-            <p>${book.author}</p>
-            <button onclick="requestLoan('${book.title}', '${book.author}', '${book.image}')" id="emprestimo">Solicitar Empréstimo</button>
-        `;
-        bookList.appendChild(bookDiv);
-    });
+const startIndex = (currentPage - 1) * itemsPerPage;
 
-    document.getElementById("page-info").innerText = `Página ${currentPage} de ${Math.ceil(filteredBooks.length / itemsPerPage)}`;
-    document.getElementById("prev-btn").disabled = currentPage === 1;
-    document.getElementById("next-btn").disabled = currentPage === Math.ceil(filteredBooks.length / itemsPerPage);
-}
+// Define o índice final adicionando o número de itens por página ao índice inicial
+const endIndex = startIndex + itemsPerPage;
+
+// Obtém os livros filtrados que serão exibidos na página atual, utilizando o método slice
+
+const paginatedBooks = filteredBooks.slice(startIndex, endIndex);
+
+
+// Para cada livro paginado, cria um novo elemento <div> para exibi-lo
+paginatedBooks.forEach(book => {
+    // Cria um <div> para o livro e adiciona a classe "book"
+    const bookDiv = document.createElement("div");
+    bookDiv.classList.add("book");
+
+    // Define o conteúdo HTML do <div>, incluindo a imagem, o título, o autor e o botão de solicitação de empréstimo
+    
+bookDiv.innerHTML = `
+        <img src="${book.image}" alt="${book.title}">
+        <h3>${book.title}</h3>
+        <p>${book.author}</p>
+        <button onclick="requestLoan('${book.title}', '${book.author}', '${book.image}')" id="emprestimo">Solicitar Empréstimo</button>
+    `;
+
+    // Adiciona o <div> criado à lista de livros na página
+    bookList.appendChild(bookDiv);
+});
+
+// Atualiza a informação da página exibida 
+document.getElementById("page-info").innerText = `Página ${currentPage} de ${Math.ceil(filteredBooks.length / itemsPerPage)}`;
+
+// Desabilita o botão "Anterior" se estiver na primeira página
+document.getElementById("prev-btn").disabled = currentPage === 1;
+
+// Desabilita o botão "Próximo" se estiver na última página
+document.getElementById("next-btn").disabled = currentPage === Math.ceil(filteredBooks.length / itemsPerPage);
+
 
 // Função para filtrar os livros com base na categoria
 function filterBooks() {
@@ -170,6 +190,7 @@ function prevPage() {
 }
 
 // Função do botão de empréstimo que redireciona o usuário para a página de empréstimo
+
 function requestLoan(bookTitle, bookAuthor, bookImage) {
     const encodedTitle = encodeURIComponent(bookTitle); // Codifica o nome do livro
     const encodedAuthor = encodeURIComponent(bookAuthor); // Codifica o nome do autor
@@ -178,6 +199,7 @@ function requestLoan(bookTitle, bookAuthor, bookImage) {
 }
 // Chama a função para que todos os livros sejam visíveis a princípio
 displayBooks();
+
 
 // Cria um novo worker e recebe as mensagens dele
 const worker = new Worker('JS/worker.js');
