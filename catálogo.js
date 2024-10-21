@@ -180,7 +180,7 @@ function requestLoan(bookTitle, bookAuthor, bookImage) {
 displayBooks();
 
 // Cria um novo worker e recebe as mensagens dele
-const worker = new Worker('worker.js');
+const worker = new Worker('JS/worker.js');
 worker.onmessage = function(event) {
     const time = event.data;
     document.getElementById('days').textContent = time.days + 'd';
