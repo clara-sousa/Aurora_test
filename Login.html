@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="JS/login.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+           <div class="menu-head">
+               <img src="IMG/logo.png" alt="logo da Aurora">                       
+                    
+               <ul>
+                   <li><a href="páginainicial.html "> Início</a></li>
+                   <li><a href="sobre.html">Sobre</a></li>
+                   <li><a href="catálogo.html">Catálogo</a></li>
+                   <li><a href="eventos.html">Eventos</a></li>
+                   <li><a href="ajuda.html">Perguntas Frequentes</a></li>
+            <li><a href="conta.html">Sua Conta</a></li>
+               </ul>        
+           </div>
+       </header>
+    <div id="loginForm" class="form-container">
+        <form method="post">
+            <div class="container">
+                <label for="name"><b>Nome de usuário</b></label>
+                <input type="text" placeholder="digite seu nome de usuário..." name="name" required>
+
+                <label for="password"><b>Senha</b></label>
+                <input type="password" placeholder="digite sua senha..." name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembre-se de mim
+                </label>
+            </div>
+            <p>Esqueceu sua <a href="#" onclick="openModal()">senha?</a></p>
+            <p>Não tem conta? <a href="#" onclick="toggleForms()">Cadastre-se</a></p>
+        </form>
+    </div>
+
+    <div id="registrationForm" class="form-container" style="display:none;">
+        <form method="post">
+            <div class="container-reg">
+                <label for="name"><b>Nome de usuário</b></label>
+                <input type="text" placeholder="digite seu nome de usuário..." name="name" required>
+
+                <label for="password"><b>Senha</b></label>
+                <input type="password" placeholder="digite sua senha..." name="psw" required>
+
+                <label for="email"><b>E-mail</b></label>
+                <input type="email" placeholder="digite seu e-mail..." name="eml" required>
+
+                <button type="submit">Finalizar Cadastro</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembre-se de mim
+                </label>
+            </div>
+            <p>Já tem uma conta? <a href="#" onclick="toggleForms()">Login</a></p>
+        </form>
+    </div>
+ <div id="forgotPasswordModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Recuperar Senha</h2>
+        <p>Digite seu e-mail para receber um link de redefinição de senha:</p>
+        <input type="email" placeholder="digite seu e-mail..." name="email" required>
+        <div id="modal-button">
+        <button onclick="sendResetLink()">Enviar</button>
+    </div>
+    </div>
+</div>
+
+    <footer>
+        <img src="IMG/logo.png" alt="Logo da Aurora">
+    </footer>
+</body>
+</html>
