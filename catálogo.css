@@ -3,19 +3,18 @@ body {
     font-family: 'Raleway';
     padding: 0;
     font-size: 3em; 
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
 }
 .menu-head {
     background-color: #59400F;
-    padding: 10px;
+    padding: 14px;
     margin-top: -10px;
     margin-right: -10px;
     margin-left: -10px;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    width: 100%;
+    width: max-content;
 }
 
 .menu-head img {
@@ -48,10 +47,11 @@ body {
 }
 footer {
     background-color: #59400F;
-    padding: 10px;
+    padding: 14px;
+    margin-top: 235px;
     justify-content: space-between; 
     align-items: center;   
-    width: 100%;
+    width: 180%;
     left: 0;
     bottom: 0;
     z-index: 1;
@@ -64,22 +64,19 @@ section {
     background: linear-gradient( to bottom, #725214,#876421, #AC8843);
     color: white;
     padding: 24px;
-    margin-left: 8vh;
+    margin-left: 30%;
     margin-top: 1vh;
-    width: 70vh;
+    width: 83%;
     border-radius: 28px;    
-   margin-bottom: -63px;
-}
-section h1 {
-  margin-left: 15vh;
+   margin-bottom: 8px;
 }
  #countdown {
   background: linear-gradient( to bottom, #725214,#876421, #AC8843);
     color: white;
     padding: 14px;
-    margin-left: 0;
+    margin-left: 30%;
     margin-top: 2vh;
-    width: 99.2vh;
+    width: 84%;
 }
  #countdown h2 {
    margin-left: 15vh;
@@ -100,10 +97,9 @@ section h1 {
      text-align: center;
      margin-bottom: 30px;
  }
-.filter {
-    margin-top: 6px;
+section .filter {
+    margin-top: 8px;
     font-size: 1em;
-    margin-left: 15vh;
 }
 
 select {
@@ -164,9 +160,8 @@ select {
     color: black;
 }
 #pagination {
-    margin-left: 15vh;
-    margin-right: -45vh;
-    margin-top: 15vh;
+    margin-left: 35%;
+    margin-top: 25%;
     font-size: 1em;
 }
 #prev-btn {
